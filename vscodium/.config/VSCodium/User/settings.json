@@ -3,7 +3,7 @@
 // Built on the Default Dark Modern theme, with every color overridden from the palette.
 {
     // ---- Base theme + fonts ----
-    "workbench.colorTheme": "Default Dark Modern",
+    "workbench.colorTheme": "Dark Modern",
     "workbench.iconTheme": "vs-seti",
     "editor.fontFamily": "'JetBrainsMono Nerd Font', monospace",
     "editor.fontSize": 14,

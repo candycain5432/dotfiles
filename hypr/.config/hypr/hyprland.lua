@@ -301,6 +301,7 @@ hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
+hl.bind(mainMod .. " + slash", hl.dsp.exec_cmd("~/.config/hypr/scripts/keybinds.sh"))
 hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlock"))   -- lock screen
 hl.bind(mainMod .. " + Escape", hl.dsp.exec_cmd("wlogout -b 5"))
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- dwindle only
@@ -420,6 +421,13 @@ hl.layer_rule({
     match = { namespace = "^notifications$" },
     blur  = true,
     ignore_alpha = 0.1,
+})
+
+-- VSCodium: see-through glass, solid when fullscreen
+hl.window_rule({
+    name    = "vscodium-glass",
+    match   = { class = "^codium$" },
+    opacity = "0.90 override 0.82 override 1.0 override",
 })
 
 -- Hyprland-run windowrule
