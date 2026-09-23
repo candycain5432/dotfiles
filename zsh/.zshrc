@@ -87,6 +87,11 @@ alias hyprconf='nvim ~/.config/hypr/hyprland.lua'
 alias barconf='nvim ~/.config/waybar/config.jsonc'
 alias zshconf='nvim ~/.zshrc'
 
+# Jump into the Kali lab container
+kali() {
+    ( cd ~/docker/kali && docker compose exec kali zsh )
+}
+
 # ---------------------------------------------------------------
 # Plugins (order matters: syntax highlighting must be LAST)
 # ---------------------------------------------------------------
