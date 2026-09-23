@@ -10,7 +10,6 @@
     "editor.fontLigatures": true,
     "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font'",
     "window.titleBarStyle": "custom",
-    "window.menuBarVisibility": "toggle",
     "editor.minimap.enabled": false,
     "editor.cursorBlinking": "smooth",
     "editor.cursorSmoothCaretAnimation": "on",
@@ -178,5 +177,12 @@
                 "settings": { "foreground": "#d6a36a", "fontStyle": "italic" }
             }
         ]
-    }
+    },
+    "window.menuBarVisibility": "toggle",
+    "workbench.statusBar.visible": false,
+    "workbench.activityBar.compact": true,
+    "workbench.navigationControl.enabled": false,
+    "workbench.layoutControl.enabled": false,
+    "workbench.browser.showInTitleBar": false,
+    "workbench.editor.enablePreview": false
 }
