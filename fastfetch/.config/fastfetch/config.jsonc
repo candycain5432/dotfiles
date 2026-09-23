@@ -1,0 +1,56 @@
+// fastfetch - Crimson Temple
+// Location: ~/.config/fastfetch/config.jsonc
+// Colors use ANSI truecolor codes: "38;2;R;G;B"
+//   accent #e9445e = 38;2;233;68;94    muted #8a8681 = 38;2;138;134;129
+// Icons are Nerd Font glyphs written as \uXXXX so they survive copy/paste.
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+
+    "logo": {
+        "type": "builtin",
+        "source": "arch",
+        "color": {
+            "1": "38;2;233;68;94",
+            "2": "38;2;233;68;94"
+        },
+        "padding": {
+            "top": 1,
+            "right": 3
+        }
+    },
+
+    "display": {
+        "separator": "  ",
+        "color": {
+            "keys": "38;2;233;68;94",
+            "title": "38;2;233;68;94"
+        }
+    },
+
+    "modules": [
+        "break",
+        "title",
+        {
+            "type": "custom",
+            "format": "\u001b[38;2;138;134;129m紅寺  crimson temple"
+        },
+        "break",
+        { "type": "os",       "key": "\uf303" },
+        { "type": "kernel",   "key": "\uf013" },
+        { "type": "packages", "key": "\uf187" },
+        { "type": "shell",    "key": "\uf489" },
+        { "type": "wm",       "key": "\uf2d2" },
+        { "type": "terminal", "key": "\uf120" },
+        "break",
+        { "type": "cpu",      "key": "\uf2db" },
+        { "type": "gpu",      "key": "\uf26c" },
+        { "type": "memory",   "key": "\uf1c0" },
+        { "type": "disk",     "key": "\uf0a0", "folders": "/" },
+        { "type": "uptime",   "key": "\uf017" },
+        "break",
+        {
+            "type": "colors",
+            "symbol": "circle"
+        }
+    ]
+}

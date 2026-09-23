@@ -1,0 +1,66 @@
+# btop theme - Crimson Temple
+# Location: ~/.config/btop/themes/crimson-temple.theme
+
+# Background (leave empty to let kitty's transparency show through)
+theme[main_bg]=""
+
+# Text
+theme[main_fg]="#d8d4ce"
+theme[title]="#d8d4ce"
+theme[hi_fg]="#e9445e"
+theme[inactive_fg]="#4a5255"
+theme[graph_text]="#8a8681"
+theme[proc_misc]="#8a8681"
+
+# Selected row in the process list
+theme[selected_bg]="#5c0f2a"
+theme[selected_fg]="#f0ece6"
+
+# Meters, box outlines, dividers
+theme[meter_bg]="#2c3335"
+theme[cpu_box]="#2c3335"
+theme[mem_box]="#2c3335"
+theme[net_box]="#2c3335"
+theme[proc_box]="#2c3335"
+theme[div_line]="#2c3335"
+
+# Temperature: cool grey -> ochre -> crimson
+theme[temp_start]="#7f95a8"
+theme[temp_mid]="#d6a36a"
+theme[temp_end]="#e9445e"
+
+# CPU graph: grey -> red, like the painting
+theme[cpu_start]="#8a8681"
+theme[cpu_mid]="#b11d43"
+theme[cpu_end]="#e9445e"
+
+# Memory graphs
+theme[free_start]="#2c3335"
+theme[free_mid]="#4a5255"
+theme[free_end]="#9aab8f"
+
+theme[cached_start]="#2c3335"
+theme[cached_mid]="#4a5255"
+theme[cached_end]="#7f95a8"
+
+theme[available_start]="#2c3335"
+theme[available_mid]="#4a5255"
+theme[available_end]="#d8d4ce"
+
+theme[used_start]="#5c0f2a"
+theme[used_mid]="#b11d43"
+theme[used_end]="#e9445e"
+
+# Network
+theme[download_start]="#2c3335"
+theme[download_mid]="#7f95a8"
+theme[download_end]="#d8d4ce"
+
+theme[upload_start]="#5c0f2a"
+theme[upload_mid]="#b11d43"
+theme[upload_end]="#e9445e"
+
+# Process list CPU usage gradient
+theme[process_start]="#8a8681"
+theme[process_mid]="#b11d43"
+theme[process_end]="#e9445e"

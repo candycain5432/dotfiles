@@ -1,0 +1,109 @@
+/* Waybar style - Crimson Temple
+ * Location: ~/.config/waybar/style.css
+ */
+
+/* ---- Palette (same roles as palette.lua) ---- */
+@define-color bg          #131314;
+@define-color surface     #1d2224;
+@define-color overlay     #2c3335;
+@define-color fg          #d8d4ce;
+@define-color muted       #8a8681;
+@define-color accent      #e9445e;
+@define-color accent_dark #b11d43;
+@define-color wine        #5c0f2a;
+@define-color success     #9aab8f;
+@define-color warn        #d6a36a;
+@define-color error       #e9445e;
+@define-color info        #7f95a8;
+
+* {
+    font-family: "JetBrainsMono Nerd Font", "Noto Sans CJK JP";
+    font-size: 13px;
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+}
+
+window#waybar {
+    background: transparent;
+    color: @fg;
+}
+
+/* Floating pills */
+#workspaces,
+#clock,
+#tray,
+#pulseaudio,
+#network,
+#cpu,
+#memory {
+    background: alpha(@bg, 0.85);
+    border: 1px solid alpha(@overlay, 0.9);
+    border-radius: 10px;
+    padding: 0 12px;
+}
+
+/* ---- Workspaces ---- */
+#workspaces {
+    padding: 0 4px;
+}
+
+#workspaces button {
+    color: @muted;
+    padding: 0 8px;
+    margin: 4px 2px;
+    border-radius: 6px;
+    background: transparent;
+    transition: all 0.2s ease;
+}
+
+#workspaces button:not(.empty) {
+    color: @fg;
+}
+
+#workspaces button.active {
+    color: @bg;
+    background: @accent;
+}
+
+#workspaces button:hover {
+    background: @overlay;
+    color: @fg;
+}
+
+#workspaces button.urgent {
+    color: @fg;
+    background: @wine;
+}
+
+/* ---- Modules: mostly warm white, one red focal point (like the wallpaper) ---- */
+#clock {
+    color: @accent;
+    font-weight: bold;
+}
+
+#pulseaudio,
+#network,
+#cpu,
+#memory {
+    color: @fg;
+}
+
+#pulseaudio.muted {
+    color: @muted;
+}
+
+#network.disconnected {
+    color: @error;
+}
+
+/* ---- Tooltips ---- */
+tooltip {
+    background: @bg;
+    border: 1px solid @accent;
+    border-radius: 10px;
+}
+
+tooltip label {
+    color: @fg;
+}

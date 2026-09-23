@@ -1,0 +1,54 @@
+# Starship prompt - Crimson Temple
+# Location: ~/.config/starship.toml
+
+palette = "crimson_temple"
+
+# Two lines: info on top, a clean arrow to type after
+format = """
+$directory$git_branch$git_status$python$nodejs$cmd_duration
+$character"""
+
+add_newline = true
+
+[palettes.crimson_temple]
+fg      = "#d8d4ce"
+muted   = "#8a8681"
+accent  = "#e9445e"
+wine    = "#b11d43"
+success = "#9aab8f"
+warn    = "#d6a36a"
+info    = "#7f95a8"
+
+[directory]
+style = "bold fg"
+truncation_length = 3
+truncation_symbol = "…/"
+home_symbol = "~"
+
+[git_branch]
+symbol = " "
+style = "accent"
+format = "[on](muted) [$symbol$branch]($style) "
+
+[git_status]
+style = "warn"
+format = "([$all_status$ahead_behind]($style) )"
+
+[python]
+symbol = " "
+style = "info"
+format = "[via](muted) [$symbol$version( \\($virtualenv\\))]($style) "
+
+[nodejs]
+symbol = " "
+style = "success"
+format = "[via](muted) [$symbol$version]($style) "
+
+[cmd_duration]
+min_time = 2000
+style = "muted"
+format = "[took $duration]($style)"
+
+[character]
+success_symbol = "[❯](accent)"
+error_symbol = "[❯](wine)"

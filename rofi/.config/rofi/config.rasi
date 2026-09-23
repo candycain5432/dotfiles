@@ -1,0 +1,108 @@
+/* Rofi - Crimson Temple
+ * Location: ~/.config/rofi/config.rasi
+ */
+
+configuration {
+    modi:                "drun,run,window";
+    show-icons:          true;
+    icon-theme:          "Papirus-Dark";
+    display-drun:        "Apps";
+    display-run:         "Run";
+    display-window:      "Windows";
+    drun-display-format: "{name}";
+}
+
+* {
+    bg:          #131314e6;
+    bg-solid:    #131314;
+    surface:     #1d2224;
+    overlay:     #2c3335;
+    fg:          #d8d4ce;
+    muted:       #8a8681;
+    accent:      #e9445e;
+
+    background-color: transparent;
+    text-color:       @fg;
+    font:             "JetBrainsMono Nerd Font 12";
+}
+
+window {
+    location:         center;
+    width:            600px;
+    background-color: @bg;
+    border:           2px;
+    border-color:     @accent;
+    border-radius:    12px;
+    padding:          16px;
+}
+
+mainbox {
+    children: [ inputbar, listview ];
+    spacing:  12px;
+}
+
+inputbar {
+    children:         [ prompt, entry ];
+    background-color: @surface;
+    border-radius:    8px;
+    padding:          10px 12px;
+    spacing:          10px;
+}
+
+prompt {
+    text-color: @accent;
+}
+
+entry {
+    placeholder:       "Search apps...";
+    placeholder-color: @muted;
+    cursor:            text;
+}
+
+listview {
+    lines:        8;
+    columns:      1;
+    spacing:      4px;
+    fixed-height: true;
+    scrollbar:    false;
+}
+
+element {
+    padding:       8px 12px;
+    border-radius: 8px;
+    spacing:       12px;
+    cursor:        pointer;
+}
+
+element normal.normal,
+element alternate.normal {
+    background-color: transparent;
+    text-color:       @fg;
+}
+
+element selected.normal {
+    background-color: @accent;
+    text-color:       @bg-solid;
+}
+
+element-icon {
+    size:       24px;
+    text-color: inherit;
+    cursor:     inherit;
+}
+
+element-text {
+    vertical-align: 0.5;
+    text-color:     inherit;
+    cursor:         inherit;
+}
+
+message {
+    background-color: @surface;
+    border-radius:    8px;
+    padding:          8px 12px;
+}
+
+textbox {
+    text-color: @muted;
+}
