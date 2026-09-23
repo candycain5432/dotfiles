@@ -1,0 +1,18 @@
+/* Spicetify - Crimson Temple extras
+ * Location: ~/.config/spicetify/Themes/CrimsonTemple/user.css
+ * Spicetify requires this file to exist; these few rules round the corners
+ * to match the rest of the desktop.
+ */
+
+.main-card-card,
+.main-image-image,
+.main-cardImage-imageWrapper {
+    border-radius: 10px !important;
+}
+
+.main-yourLibraryX-entryPoints,
+.Root__nav-bar,
+.Root__main-view,
+.Root__now-playing-bar {
+    border-radius: 10px;
+}

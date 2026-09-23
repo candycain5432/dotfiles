@@ -1,0 +1,182 @@
+// VSCodium - Crimson Temple
+// Location: ~/.config/VSCodium/User/settings.json
+// Built on the Default Dark Modern theme, with every color overridden from the palette.
+{
+    // ---- Base theme + fonts ----
+    "workbench.colorTheme": "Default Dark Modern",
+    "workbench.iconTheme": "vs-seti",
+    "editor.fontFamily": "'JetBrainsMono Nerd Font', monospace",
+    "editor.fontSize": 14,
+    "editor.fontLigatures": true,
+    "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font'",
+    "window.titleBarStyle": "custom",
+    "window.menuBarVisibility": "toggle",
+    "editor.minimap.enabled": false,
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.smoothScrolling": true,
+    "editor.renderLineHighlight": "all",
+
+    // Semantic highlighting would override the token colors below; keep it off for a consistent look
+    "editor.semanticHighlighting.enabled": false,
+
+    // ---- UI colors ----
+    "workbench.colorCustomizations": {
+        // Editor
+        "editor.background": "#131314",
+        "editor.foreground": "#d8d4ce",
+        "editor.lineHighlightBackground": "#1d2224",
+        "editor.selectionBackground": "#5c0f2a99",
+        "editor.selectionHighlightBackground": "#5c0f2a55",
+        "editor.findMatchBackground": "#b11d4388",
+        "editor.findMatchHighlightBackground": "#5c0f2a66",
+        "editorCursor.foreground": "#e9445e",
+        "editorLineNumber.foreground": "#4a5255",
+        "editorLineNumber.activeForeground": "#e9445e",
+        "editorIndentGuide.background1": "#1d2224",
+        "editorIndentGuide.activeBackground1": "#2c3335",
+        "editorBracketMatch.border": "#e9445e",
+        "editorWhitespace.foreground": "#2c3335",
+        "editorWidget.background": "#1d2224",
+        "editorWidget.border": "#2c3335",
+        "editorSuggestWidget.background": "#1d2224",
+        "editorSuggestWidget.selectedBackground": "#2c3335",
+        "editorSuggestWidget.highlightForeground": "#e9445e",
+        "editorError.foreground": "#e9445e",
+        "editorWarning.foreground": "#d6a36a",
+        "editorInfo.foreground": "#7f95a8",
+        "editorGutter.addedBackground": "#9aab8f",
+        "editorGutter.modifiedBackground": "#d6a36a",
+        "editorGutter.deletedBackground": "#e9445e",
+
+        // Chrome around the editor
+        "titleBar.activeBackground": "#131314",
+        "titleBar.activeForeground": "#d8d4ce",
+        "titleBar.inactiveBackground": "#131314",
+        "titleBar.inactiveForeground": "#8a8681",
+        "activityBar.background": "#131314",
+        "activityBar.foreground": "#e9445e",
+        "activityBar.inactiveForeground": "#8a8681",
+        "activityBar.activeBorder": "#e9445e",
+        "activityBarBadge.background": "#e9445e",
+        "activityBarBadge.foreground": "#131314",
+        "sideBar.background": "#131314",
+        "sideBar.foreground": "#d8d4ce",
+        "sideBar.border": "#1d2224",
+        "sideBarSectionHeader.background": "#1d2224",
+        "sideBarTitle.foreground": "#8a8681",
+        "statusBar.background": "#131314",
+        "statusBar.foreground": "#8a8681",
+        "statusBar.border": "#1d2224",
+        "statusBar.debuggingBackground": "#b11d43",
+        "statusBar.noFolderBackground": "#131314",
+        "statusBarItem.remoteBackground": "#e9445e",
+        "statusBarItem.remoteForeground": "#131314",
+        "panel.background": "#131314",
+        "panel.border": "#2c3335",
+        "panelTitle.activeBorder": "#e9445e",
+        "panelTitle.activeForeground": "#d8d4ce",
+
+        // Tabs
+        "editorGroupHeader.tabsBackground": "#131314",
+        "tab.activeBackground": "#1d2224",
+        "tab.activeForeground": "#d8d4ce",
+        "tab.activeBorderTop": "#e9445e",
+        "tab.inactiveBackground": "#131314",
+        "tab.inactiveForeground": "#8a8681",
+        "tab.border": "#131314",
+
+        // Lists, inputs, buttons
+        "focusBorder": "#e9445e88",
+        "list.activeSelectionBackground": "#2c3335",
+        "list.activeSelectionForeground": "#f0ece6",
+        "list.inactiveSelectionBackground": "#1d2224",
+        "list.hoverBackground": "#1d2224",
+        "list.highlightForeground": "#e9445e",
+        "input.background": "#1d2224",
+        "input.border": "#2c3335",
+        "input.foreground": "#d8d4ce",
+        "inputOption.activeBorder": "#e9445e",
+        "button.background": "#e9445e",
+        "button.foreground": "#131314",
+        "button.hoverBackground": "#f06a80",
+        "badge.background": "#e9445e",
+        "badge.foreground": "#131314",
+        "progressBar.background": "#e9445e",
+        "scrollbarSlider.background": "#2c333588",
+        "scrollbarSlider.hoverBackground": "#2c3335",
+        "scrollbarSlider.activeBackground": "#4a5255",
+
+        // Git colors in the file tree
+        "gitDecoration.modifiedResourceForeground": "#d6a36a",
+        "gitDecoration.untrackedResourceForeground": "#9aab8f",
+        "gitDecoration.deletedResourceForeground": "#e9445e",
+        "gitDecoration.ignoredResourceForeground": "#4a5255",
+
+        // Integrated terminal: same 16 colors as kitty
+        "terminal.background": "#131314",
+        "terminal.foreground": "#d8d4ce",
+        "terminalCursor.foreground": "#e9445e",
+        "terminal.ansiBlack": "#2c3335",
+        "terminal.ansiBrightBlack": "#4a5255",
+        "terminal.ansiRed": "#e9445e",
+        "terminal.ansiBrightRed": "#f06a80",
+        "terminal.ansiGreen": "#9aab8f",
+        "terminal.ansiBrightGreen": "#b3c2a8",
+        "terminal.ansiYellow": "#d6a36a",
+        "terminal.ansiBrightYellow": "#e4bd8c",
+        "terminal.ansiBlue": "#7f95a8",
+        "terminal.ansiBrightBlue": "#9cb0c1",
+        "terminal.ansiMagenta": "#c45c7c",
+        "terminal.ansiBrightMagenta": "#d77f9a",
+        "terminal.ansiCyan": "#8fb0ad",
+        "terminal.ansiBrightCyan": "#aac7c4",
+        "terminal.ansiWhite": "#d8d4ce",
+        "terminal.ansiBrightWhite": "#f0ece6"
+    },
+
+    // ---- Syntax colors ----
+    "editor.tokenColorCustomizations": {
+        "comments": "#8a8681",
+        "strings": "#d6a36a",
+        "keywords": "#e9445e",
+        "numbers": "#c45c7c",
+        "functions": "#9aab8f",
+        "types": "#7f95a8",
+        "variables": "#d8d4ce",
+        "textMateRules": [
+            {
+                "scope": ["comment", "punctuation.definition.comment"],
+                "settings": { "fontStyle": "italic" }
+            },
+            {
+                "scope": ["storage.type", "storage.modifier", "keyword.control"],
+                "settings": { "foreground": "#e9445e" }
+            },
+            {
+                "scope": ["constant.language", "constant.numeric", "support.constant"],
+                "settings": { "foreground": "#c45c7c" }
+            },
+            {
+                "scope": ["entity.name.class", "entity.name.type", "support.class"],
+                "settings": { "foreground": "#7f95a8", "fontStyle": "bold" }
+            },
+            {
+                "scope": ["variable.parameter"],
+                "settings": { "foreground": "#8fb0ad", "fontStyle": "italic" }
+            },
+            {
+                "scope": ["keyword.operator", "punctuation"],
+                "settings": { "foreground": "#8a8681" }
+            },
+            {
+                "scope": ["entity.name.tag"],
+                "settings": { "foreground": "#e9445e" }
+            },
+            {
+                "scope": ["entity.other.attribute-name"],
+                "settings": { "foreground": "#d6a36a", "fontStyle": "italic" }
+            }
+        ]
+    }
+}
