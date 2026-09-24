@@ -20,11 +20,11 @@ works in the painting.
 
 Built from a manual Arch install on an encrypted Btrfs drive, running a fully
 hand-configured Hyprland session.
-
-<div align="center">
-
 ## Wallpaper
 # Download in assets
+<div align="center">
+
+
 
 ![Desktop with editor](assets/wallpaper.jpg)
 
