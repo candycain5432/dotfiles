@@ -23,6 +23,9 @@ hand-configured Hyprland session.
 
 <div align="center">
 
+## Wallpaper
+# Download in assets
+
 ![Desktop with editor](assets/wallpaper.jpg)
 
 </div>
