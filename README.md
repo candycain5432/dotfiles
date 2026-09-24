@@ -23,7 +23,7 @@ hand-configured Hyprland session.
 
 <div align="center">
 
-![Desktop with editor](assets/desktop-02.png)
+![Desktop with editor](assets/wallpaper.jpg)
 
 </div>
 
