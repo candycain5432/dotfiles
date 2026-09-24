@@ -21,7 +21,7 @@ works in the painting.
 Built from a manual Arch install on an encrypted Btrfs drive, running a fully
 hand-configured Hyprland session.
 ## Wallpaper
-# Download in assets
+### Download in assets
 <div align="center">
 
 
