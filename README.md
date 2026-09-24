@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🏯 Crimson Temple — Dotfiles
+# 🏯 Crimson Temple Dotfiles
 
 ### Arch Linux · Hyprland · a hand-mixed palette pulled from the wallpaper
 
@@ -12,7 +12,7 @@
 
 ## Overview
 
-My personal Arch Linux setup, themed **Crimson Temple** — a palette I sampled
+My personal Arch Linux setup, themed **Crimson Temple** a palette I sampled
 directly from the wallpaper (dark rocks, grey mist, and the red sun over the
 temple) so every component matches the same source. Almost everything is
 neutral; red is saved for the one thing that should catch your eye, the way it
@@ -49,7 +49,7 @@ hand-configured Hyprland session.
 
 ## The palette
 
-Roles, not hues — so a re-theme only touches the palette files.
+Roles, not hues so a re-theme only touches the palette files.
 
 | Role | Hex | From |
 |---|---|---|
@@ -65,7 +65,7 @@ Roles, not hues — so a re-theme only touches the palette files.
 | Warn | `#d6a36a` | Ochre (added) |
 | Info | `#7f95a8` | Slate mist |
 
-*(Sage, ochre, and slate were added for terminal output — the wallpaper has no
+*(Sage, ochre, and slate were added for terminal output the wallpaper has no
 greens, yellows, or blues, so they're muted to sit quietly in the grey world.)*
 
 ## Structure
@@ -75,24 +75,24 @@ Managed with [GNU Stow](https://www.gnu.org/software/stow/): each folder mirrors
 
 ```
 dotfiles/
-├── hypr/       # Hyprland: config, palette.lua, hyprlock, hypridle, scripts
-├── waybar/     # bar config + style
-├── rofi/       # launcher theme
-├── mako/       # notification style
-├── kitty/      # terminal + Tokyo-Night-to-Crimson colors
-├── fastfetch/  # the screenshot fetch
-├── btop/       # themed monitor
-├── wlogout/    # power menu
-├── zsh/        # .zshrc
-├── starship/   # prompt
-├── vscodium/   # editor colors
-├── spicetify/  # Spotify theme
+├── hypr/    # Hyprland: config, palette.lua, hyprlock, hypridle, scripts
+├── waybar/   # bar config + style
+├── rofi/    # launcher theme
+├── mako/    # notification style
+├── kitty/   # terminal + Tokyo-Night-to-Crimson colors
+├── fastfetch/ # the screenshot fetch
+├── btop/    # themed monitor
+├── wlogout/  # power menu
+├── zsh/    # .zshrc
+├── starship/  # prompt
+├── vscodium/  # editor colors
+├── spicetify/ # Spotify theme
 └── grub-theme/ # boot menu (installed separately, to /boot)
 ```
 
 ## Install
 
-> Requires an existing Arch system with the packages below. Review before running —
+> Requires an existing Arch system with the packages below. Review before running 
 > these symlink over files in your `$HOME`.
 
 ```bash
@@ -113,15 +113,15 @@ cd grub-theme && ./install.sh
 hyprland hyprlock hypridle hyprpaper waybar rofi mako kitty
 zsh starship eza bat fzf zoxide fastfetch btop wlogout
 ttf-jetbrains-mono-nerd noto-fonts-cjk papirus-icon-theme
-nvidia-580xx-dkms   # AUR — legacy GPUs only
+nvidia-580xx-dkms  # AUR legacy GPUs only
 ```
 
 ## Notes
 
 - **Palette lives in one place per tool** (`palette.lua`, Waybar's
-  `@define-color`, Rofi variables, etc.). Change a color once, it propagates.
+ `@define-color`, Rofi variables, etc.). Change a color once, it propagates.
 - **NVIDIA:** the GTX 1070 (Pascal) needs the AUR `nvidia-580xx` legacy branch;
-  the current driver dropped support for it.
+ the current driver dropped support for it.
 - **Hyprland uses the newer Lua config**, not the legacy `hyprland.conf`.
 
 ---
