@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🏯 Crimson Temple Dotfiles
+# Crimson Temple Dotfiles
 
 ### Arch Linux · Hyprland · a hand-mixed palette pulled from the wallpaper
 
